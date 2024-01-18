@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let firstNumber = prompt("Enter the first number:");
+
+
+if (isNaN(firstNumber)) {
+    alert("Not a number!Enter a valid number.");
+} else {
+    
+    let operator = prompt("Enter the operator (+, -, *, /):");
+
+    
+    if (operator !== '+' && operator !== '-' && operator !== '*' && operator !== '/') {
+        alert("Not an operator! Enter a valid operator.");
+    } else {
+    
+        let secondNumber = prompt("Enter the second number:");
+
+      
+        if (isNaN(secondNumber)) {
+            alert("Not a number! Enter a valid number.");
+        } else {
+            
+            let result;
+            if (operator === '+') {
+                result = Number(firstNumber) + Number(secondNumber);
+            } else if (operator === '-') {
+                result = Number(firstNumber) - Number(secondNumber);
+            } else if (operator === '*') {
+                result = Number(firstNumber) * Number(secondNumber);
+            } else if (operator === '/') {
+                
+                if (Number(number2) === 0) {
+                    alert("Cannot divide by zero. Please enter a non-zero second number.");
+                } else {
+                    result = Number(firstNumber) / Number(secondNumber);
+                }
+            }
+
+       
+            alert("Result: " + result);
+        }
+    }
+}
+    </script>
+</body>
+</html>
+
+
